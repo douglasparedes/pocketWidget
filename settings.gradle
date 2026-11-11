@@ -1,0 +1,40 @@
+pluginManagement {
+    resolutionStrategy {
+        eachPlugin {
+            def module = null
+            switch (requested.id.id) {
+                case 'com.android.application':
+                    module = 'com.android.tools.build:gradle:9.4.1'
+                    break
+                case 'org.jetbrains.kotlin.android':
+                    module = 'org.jetbrains.kotlin:kotlin-gradle-plugin:2.2.10'
+                    break
+                case 'org.jetbrains.kotlin.plugin.compose':
+                    module = 'org.jetbrains.kotlin:compose-compiler-gradle-plugin:2.2.10'
+                    break
+                case 'com.google.devtools.ksp':
+                    module = 'com.google.devtools.ksp:symbol-processing-gradle-plugin:2.2.10-2.0.2'
+                    break
+            }
+            if (module != null) {
+                useModule(module)
+            }
+        }
+    }
+    repositories {
+        google()
+        mavenCentral()
+        gradlePluginPortal()
+    }
+}
+
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+    }
+}
+
+rootProject.name = 'PocketWidget'
+include ':app'

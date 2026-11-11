@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">PocketWidget</string>
+
+    <string name="shortcut_new_short">Log expense</string>
+    <string name="shortcut_new_long">Log an expense</string>
+    <string name="shortcut_history_short">History</string>
+    <string name="shortcut_history_long">Open spending history</string>
+
+    <string name="widget_month_label">PocketWidget · Month</string>
+    <string name="widget_month_description">Monthly total, limit gauge and top category.</string>
+    <string name="widget_quick_label">PocketWidget · Quick add</string>
+    <string name="widget_quick_description">One-tap buttons for your favourite categories.</string>
+    <string name="tile_label">Log expense</string>
+</resources>

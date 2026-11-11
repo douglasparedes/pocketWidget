@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shortcuts xmlns:android="http://schemas.android.com/apk/res/android">
+    <shortcut
+        android:enabled="true"
+        android:icon="@drawable/ic_shortcut_add"
+        android:shortcutId="new_expense"
+        android:shortcutLongLabel="@string/shortcut_new_long"
+        android:shortcutShortLabel="@string/shortcut_new_short">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:data="pocketwidget://add"
+            android:targetClass="com.pocketwidget.ui.MainActivity"
+            android:targetPackage="com.pocketwidget" />
+    </shortcut>
+    <shortcut
+        android:enabled="true"
+        android:icon="@drawable/ic_shortcut_history"
+        android:shortcutId="history"
+        android:shortcutLongLabel="@string/shortcut_history_long"
+        android:shortcutShortLabel="@string/shortcut_history_short">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:data="pocketwidget://history"
+            android:targetClass="com.pocketwidget.ui.MainActivity"
+            android:targetPackage="com.pocketwidget" />
+    </shortcut>
+</shortcuts>
